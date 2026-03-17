@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Your name">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <title>MonoMuse</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="../static/script.js" defer></script>
+</head>
+<body onload="addYear()">
+    <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo"> 
+    <nav> 
+        <ul>
+            <li><a id="navselected" href="index.html">Home</a></li>
+            <li><a href="views/explore.html">Explore</a></li>
+            <li><a href="views/exhibitions.html">Exhibitions</a></li>
+            <li><a href="views/tickets.html">Tickets</a></li>
+            <li><a href="views/checkout.html">Checkout</a></li>
+        </ul>
+    </nav>
+
+    <div class="main">
+        <h1>Checkout</h1>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="card">Ticket Quantity:</label><br>
+            <input type="number" id="card" name="card" min="1"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+ 
+<footer>
+    <p>&copy; MonoMuse. All rights reserved.</p>
+    <p id="copyYear"></p>
+</footer>
+</body>
+</html>
