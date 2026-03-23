@@ -1,0 +1,137 @@
+* {
+    font-family: 'opensans', sans-serif;
+    padding: 5px;
+    margin: 5px;
+    background: rgb(238, 235, 235);
+    color:  black;    
+    font-optical-sizing: auto;
+    font-weight: 100;
+    line-height: 1.5;
+    font-style: normal;
+}
+
+#logo {
+  width: 18%;
+  display: block;
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+}
+
+nav a.active {
+  color:#947D6F;  
+  background: transparent;
+  border-color: #947D6F  
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+  padding: 8px 10px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+}
+
+nav a:hover {
+  border-color: #947D6F;
+  }
+
+
+
+footer {
+  border-top: 1px solid rgba(103, 103, 159, 0.12);
+  padding: 18px 16px;
+  text-align: center;
+  color: rgba(208, 208, 234, 0.72);
+  background-color: #fee67b;
+  }
+
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: white;
+  color: black;
+  width: fit-content;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+form * {
+  margin: auto;
+  text-align: center;
+}
+
+
+.container {
+  display: grid; /* Turns this div into a CSS Grid layout */
+  grid-template-areas:   /* Defines the layout structure */
+    'header header'
+    'nav_bar nav_bar'
+    'main main-img'
+    'footer footer';
+}
+
+/* Places each element into the correct area of the grid */
+.header {
+   grid-area: header; 
+}
+.nav_bar {
+   grid-area: nav_bar; 
+}
+.main {
+  grid-area: main; 
+}
+.main_img {
+   grid-area: main-img; 
+}
+.footer {
+   grid-area: footer;
+}
+
+.nav_bar {
+   grid-area: nav_bar;
+   display: flex; /* Uses Flexbox for internal layout */
+   justify-content: right;   /* Right aligns the content */
+}
+
+
+/* Index.html read more/less button */
+
+#shortIntro, #longIntro {
+    max-width: 600px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+#readMoreBtn, #readLessBtn {
+    display: block;
+    margin: 10px auto;
+    padding: 8px 20px;
+    background: transparent;
+    color: lightblue;
+    border: 1px solid lightblue;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#readMoreBtn:hover, #readLessBtn:hover {
+    border-color: darkcyan;
+    color: darkcyan;
+}
+
+.hidden {
+    display: none;
+}
+
+#checkoutForm {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background-color: white;
+    display: none;
+}
