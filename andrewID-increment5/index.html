@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Your name">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <title>MonoMuse</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js" defer></script>
+    <script
+    src="https://code.jquery.com/jquery-4.0.0.js"
+    integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U="
+    crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+</head>
+<body onload="addYear()">
+    <div class="container">
+        <header class="header">
+            <h1>MonoMuse</h1>
+        <h2 id="greeting">Carnegie Museum of Art Website Redesign</h2>
+        </header>
+        <nav class="nav_bar"> 
+            <a href="#" class="hamburgerOpen" role="button" aria-label="Open navigation menu">
+                <img src="../static/download.png" alt="Hamburger Menu Icon">
+            </a>
+            <div class="mobileMenu">
+                <a href="#" class="hamburgerClosed" role="button" aria-label="Close navigation menu">
+                    <img src="../static/download.png" alt="Close Menu Icon">
+                </a>
+
+                <ul class="hamburgerLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="views/explore.html">Explore</a></li>
+                    <li><a href="views/exhibitions.html">Exhibitions</a></li>
+                    <li><a href="views/buytickets.html">Tickets</a></li>
+                    <li><a href="views/checkout.html">Checkout</a></li>
+                </ul>
+            </div>
+    </nav>
+    <main class="main">
+        <h2>Welcome to MonoMuse</h2>
+        <p>MonoMuse is a project focused on redesigning the website for the Carnegie Museum of Art. Our goal is to create a more user-friendly and visually appealing online experience for visitors, while also providing easy access to information about the museum's collections, exhibitions, and events.</p>
+        <p>Through this project, we aim to enhance the overall user experience and make it easier for people to explore and engage with the museum's offerings. We will be working on improving the website's navigation, layout, and design to create a more intuitive and enjoyable browsing experience.</p>
+        <a href="https://www.cmoa.org/">Buy Tickets</a>
+
+        <p id="shortIntro">
+        We are excited to share our progress and look forward to creating a website that truly reflects the rich history and vibrant culture of the Carnegie Museum of Art. Stay tuned for updates as we continue to work on this project!
+        </p>
+        <p id="longIntro" style="display:none">
+        Welcome to MonoMuse, a cutting-edge museum experience dedicated to the art of monochromatic expression. 
+        Founded at the intersection of technology and creativity, MonoMuse reimagines what it means to explore 
+        art in its most distilled form, stripped of color, yet full of depth, contrast, and emotion. Our 
+        permanent collection features over 500 works spanning photography, sculpture, digital installations, 
+        and traditional painting, all unified by a singular vision: the infinite power of black, white, and 
+        every shade in between. From the haunting silver gelatin prints of early 20th century photographers 
+        to the bold geometric abstractions of contemporary digital artists, MonoMuse offers a journey through 
+        time and medium that challenges visitors to see the world differently.
+        </p>
+        <span id="buttonContainer">
+            <button id="readMore"> Read More </button>
+            <button id="readLess" style="display:none"> Read Less </button>
+        </span>
+    </main>
+
+<footer class="footer">
+    <p>&copy; MonoMuse. All rights reserved.</p>
+    <p id="copyYear"></p>
+</footer>
+</div>
+</body>
+</html>
