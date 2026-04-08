@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Your name">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <title>MonoMuse</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+
+    <script src="../static/script.js" defer></script>
+</head>
+<body onload="addYear()">
+<div class="container">
+    <header class="header">
+    <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo"> 
+    </header>
+    <nav class="nav_bar"> 
+            <a href="#" class="hamburgerOpen" role="button" aria-label="Open navigation menu">
+                <img src="../static/download.png" alt="Hamburger Menu Icon">
+            </a>
+            <div class="mobileMenu">
+                <a href="#" class="hamburgerClosed" role="button" aria-label="Close navigation menu">
+                    <img src="../static/download.png" alt="Close Menu Icon">
+                </a>
+
+                <ul class="hamburgerLinks">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="exhibitions.html">Exhibitions</a></li>
+                    <li><a href="buytickets.html">Tickets</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                </ul>
+            </div>
+    </nav>
+
+    <main class="main">
+        <h1> Explore </h1>
+        <div id="map" style="height: 400px; width: 100%;"></div>        <img src="../static/gallery.jpg" alt="Gallery Image">
+        <h3> Mission Statement </h3>
+        <p> The Explore page allows users to browse through the museum's collection and exhibitions. It features a search bar for easy navigation and filters to help users find specific types of art or exhibitions. The page is designed to be visually appealing and user-friendly, with clear categories and high-quality images of the artworks. </p>
+    <h3> Who we serve </h3>
+        <ul>
+            <li> Art enthusiasts looking to explore the museum's collection and exhibitions. </li>
+            <li> Visitors planning their trip to the museum and wanting to see what exhibitions are currently on display. </li>
+            <li> Students and researchers interested in learning more about the museum's collection and exhibitions. </li>
+        </ul>    
+    <h3> Milestones </h3>
+    <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/fdcEKPS6tOQ?si=jqOFZPdV3BDclNFN" >
+        </iframe>
+    </div>    
+    <ul>
+        <li> 2024: Conducted user research to understand the needs and preferences of our target audience. </li>
+        <li> 2025: Developed wireframes and prototypes for the Explore page. </li>
+        <li> 2026: Implemented the Explore page with a focus on usability and visual appeal. </li>
+        <li> 2026: Conducted user testing to gather feedback and make improvements to the Explore page. </li>
+    </ul>
+</main>
+
+<footer class="footer">
+    <p>&copy; MonoMuse. All rights reserved.</p>
+    <p id="copyYear"></p>
+</footer>
+</div>
+</body> 
+</html>

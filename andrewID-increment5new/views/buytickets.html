@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Your name">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <title>MonoMuse</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="../static/script.js" defer></script>
+</head>
+<body onload="addYear() ; showForm()">
+<div class="container">
+    <header class="header">
+    <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo"> 
+    </header>
+    <nav class="nav_bar"> 
+            <a href="#" class="hamburgerOpen" role="button" aria-label="Open navigation menu">
+                <img src="../static/download.png" alt="Hamburger Menu Icon">
+            </a>
+            <div class="mobileMenu">
+                <a href="#" class="hamburgerClosed" role="button" aria-label="Close navigation menu">
+                    <img src="../static/download.png" alt="Close Menu Icon">
+                </a>
+
+                <ul class="hamburgerLinks">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="exhibitions.html">Exhibitions</a></li>
+                    <li><a href="buytickets.html">Tickets</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                </ul>
+            </div>
+    </nav>
+    <main class="main">
+        <h1> Buy Tickets </h1>
+
+        <h3> Ticket Calendar </h3>
+        <table>
+            <tr>
+                <th>Sunday</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1 <button>Buy Now</button></td>
+                <td>2</td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6<button>Buy Now</button></td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>11<button class="toggleButton">Buy Now</button></td>
+                <td>12<button class="toggleButton">Buy Now</button></td>
+                <td>13<button class="toggleButton">Buy Now</button></td>
+                <td>14<button class="toggleButton">Buy Now</button></td>
+                <td>15</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>18<button class="toggleButton">Buy Now</button></td>
+                <td>19<button class="toggleButton">Buy Now</button></td>
+                <td>20<button class="toggleButton">Buy Now</button></td>
+                <td>21<button class="toggleButton">Buy Now</button></td>
+                <td>22</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>25<button class="toggleButton">Buy Now</button></td>
+                <td>26<button class="toggleButton">Buy Now</button></td>
+                <td>27</td>
+                <td>28</td>
+                <td>29<button class="toggleButton">Buy Now</button></td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td>1<button class="toggleButton">Buy Now</button></td>
+                <td>2<button class="toggleButton">Buy Now</button></td>
+                <td>3<button class="toggleButton">Buy Now</button></td>
+                <td>4<button>Buy Now</button></td>
+                <td>5<button>Buy Now</button></td>
+                <td>6</td>
+            </tr>
+        </table>
+
+        <h3> Ticket Types </h3>
+        <table>
+            <tr>
+                <th>Ticket Type</th>
+                <th>Price</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>General Admission</td>
+                <td>$15</td>
+                <td>Access to all permanent collections and special exhibitions</td>
+            </tr>
+            <tr>
+                <td>Student Admission (65+)</td>
+                <td>$10</td>
+                <td>Access to all permanent collections and special exhibitions with valid ID</td>
+            </tr>
+            <tr>
+                <td>Member Admission (with valid ID)</td>
+                <td>$10</td>
+                <td>Access to all permanent collections and special exhibitions for museum members</td>
+            </tr>
+        </table>
+
+        <div id="checkoutForm">
+            <h3>Checkout</h3>
+            <form >
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="card">Ticket Quantity:</label><br>
+                <input type="number" id="card" name="card" min="1"><br>
+                <label for="date">Date:</label><br>
+                <input type="date" id="date" name="date"><br>
+                <input type="submit" value="Submit" onclick="submitOrder()">
+            </form>
+        </div>
+    </main>
+
+<footer class="footer">
+    <p>&copy; MonoMuse. All rights reserved.</p>
+    <p id="copyYear"></p>
+</footer>
+</div>
+</body>
+</html>
